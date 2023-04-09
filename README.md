@@ -23,14 +23,14 @@ if ($conn == false) {
 
 - ### contoh database yang dibuat
 
-  <img src="output/database.png">
+  <img src="https://arielsa.mra.my.id/foto/lab4/database.png">
 
 <br>
 <br>
 
 ## Home.php // Home
 
-<img src="output/hasil.png">
+<img src="https://arielsa.mra.my.id/foto/lab4/hasil.png">
 
 <br>
 
@@ -123,11 +123,13 @@ $no = 1;
 
 ## Form Tambah.php
 
-  <img src="output/tambah.png">
+  <img src="https://arielsa.mra.my.id/foto/lab4/tambah.png">
 
   <br>
 
 - Sintax ini merupakan sebuah form untuk menambahkan data barang ke dalam database. Pada saat form dikirimkan (submit), data yang dimasukkan oleh pengguna akan diolah terlebih dahulu dan kemudian dimasukkan ke dalam database.
+
+<br>
 
 ```php
 <?php
@@ -140,7 +142,7 @@ error_reporting(E_ALL);
 
 class Barang
 {
-    private $conn;
+private $conn;
 
     public function __construct($conn)
     {
@@ -172,16 +174,15 @@ class Barang
 
         return $result;
     }
+
 }
-
-
 
 if (isset($_POST['submit'])) {
     $barang = new Barang($conn);
-    $result = $barang->tambahBarang((object) $_POST);
+$result = $barang->tambahBarang((object) $_POST);
     if ($result) {
-        header('location: home');
-    }
+header('location: home');
+}
 }
 
 ?>
@@ -238,6 +239,7 @@ if (isset($_POST['submit'])) {
 
 <?php include_once("footer.php")  // Memanggil file footer.php
 ?>
+
 ```
 
 <br>
@@ -245,7 +247,7 @@ if (isset($_POST['submit'])) {
 
 ## Form Ubah.php
 
-<img src="output/ubah.png">
+<img src="https://arielsa.mra.my.id/foto/lab4/ubah.png">
 
 <br>
 
@@ -353,14 +355,13 @@ if (isset($_POST['submit'])) {
   </body>
   <?php include_once 'footer.php'; // Memanggil file footer.php
   ?>
+  <br>
+  <br>
   ```
-
-<br>
-<br>
 
 ## Form Hapus.php
 
-<img src="output/hapus.png">
+<img src="https://arielsa.mra.my.id/foto/lab4/hapus.png">
 
 <br>
 
@@ -427,13 +428,17 @@ RewriteRule ^(.*)$ index.php?mod=$1 [L]
 
   - Halaman Home (http://localhost/lab4web/home):\
     <br>
-    <img src='output/a.png'>
+    <img src="https://arielsa.mra.my.id/foto/lab4/a.png">
 
     <br>
 
   - Halaman Tambah (http://localhost/lab4web/tambah):
 
     <br>
-    <img src='output/b.png'>
+    <img src="https://arielsa.mra.my.id/foto/lab4/b.png">
 
 # TERIMAKASIH
+
+```
+
+```
