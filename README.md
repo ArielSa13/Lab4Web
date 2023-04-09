@@ -17,6 +17,7 @@ if ($conn == false) {
 ```
 
 <br>
+
 - Kode di atas adalah script PHP yang melakukan koneksi ke server database MySQL menggunakan fungsi mysqli_connect(). Variabel $host berisi nama server database, $user berisi username untuk mengakses database, $pass berisi password untuk mengakses database, dan $db berisi nama database yang akan digunakan.
 
 <br>
@@ -29,6 +30,8 @@ if ($conn == false) {
 <br>
 
 ## Home.php // Home
+
+<br>
 
 <img src="https://arielsa.mra.my.id/foto/lab4/hasil.png">
 
